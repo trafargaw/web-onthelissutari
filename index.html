@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Akang Tari Onthel Heritage — Sepeda dengan Cerita</title>
+<link rel="icon" type="image/png" href="foto/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Bentuk sepeda (placeholder SVG). Ganti dengan foto asli lewat field "img" di data produk -->
+<svg width="0" height="0" style="position:absolute"><symbol id="bike" viewBox="0 0 400 260">
+<g fill="none" stroke="#222" stroke-width="4"><circle cx="95" cy="175" r="62"/><circle cx="305" cy="175" r="62"/>
+<path stroke-width="1" d="M95 113v124M33 175h124M51 131l88 88M139 131l-88 88M305 113v124M243 175h124M261 131l88 88M349 131l-88 88"/></g>
+<g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M95 175H185L150 95H255L305 175M185 175L255 95M255 95L268 52M268 52L305 175M150 95L144 72"/></g>
+<path d="M118 70q26-10 56 0" stroke="#5a3a22" stroke-width="9" stroke-linecap="round" fill="none"/>
+<path d="M248 52h40" stroke="#222" stroke-width="5" stroke-linecap="round"/>
+<path d="M292 58h46l-6 28h-34z" fill="none" stroke="#222" stroke-width="2.5"/>
+<circle cx="185" cy="175" r="9" fill="#222"/></symbol></svg>
+
+<header class="sticky top-0 z-50 bg-[#141414] border-b border-white/10">
+ <div class="wrap flex items-center justify-between h-16">
+  <a href="#/" class="flex items-center gap-3">
+   <img src="foto/logo.png" alt="Logo Akang Tari Onthel Heritage" class="h-12 w-12 object-contain" style="mix-blend-mode:lighten">
+   <span><b class="text-white text-xs tracking-[.2em] block">AKANG TARI ONTHEL</b><i class="text-[8px] tracking-[.2em] text-[var(--gold)] not-italic">/ HERITAGE</i></span>
+  </a>
+  <nav class="nav hidden md:flex gap-8"><a href="#/">Beranda</a><a href="#koleksi" data-go="koleksi">Koleksi</a><a href="#cerita" data-go="cerita">Cerita Kami</a><a href="#/perjalanan">Perjalanan Kami</a></nav>
+  <div class="flex items-center gap-4 text-white">
+   <button id="sbtn" aria-label="Cari" class="text-sm">⌕</button>
+   <button id="mbtn" class="md:hidden text-lg" aria-label="Menu">☰</button>
+  </div>
+ </div>
+ <div id="mnav" class="nav hidden md:hidden flex-col gap-4 px-5 pb-5"><a href="#/">Beranda</a><a href="#koleksi" data-go="koleksi">Koleksi</a><a href="#cerita" data-go="cerita">Cerita Kami</a><a href="#/perjalanan">Perjalanan Kami</a></div>
+</header>
+
+<main id="app"></main>
+
+<footer class="bg-[#141414] text-[#cfc8bc] mt-0">
+ <div class="wrap py-14">
+  <div class="flex flex-wrap justify-between gap-6 items-start">
+   <div class="flex items-center gap-3"><img src="foto/logo.png" alt="Logo Akang Tari Onthel Heritage" class="h-20 w-20 object-contain" style="mix-blend-mode:lighten"><div><b class="text-white tracking-[.2em] text-sm">AKANG TARI ONTHEL</b><div class="text-[9px] tracking-[.2em] text-[var(--gold)] mt-1">/ HERITAGE</div></div></div>
+   <p class="text-xs">Sepeda dengan cerita yang terus berjalan.</p>
+   <a class="text-xs underline" target="_blank" rel="noopener" href="https://wa.me/6285722266916?text=Hallo%20Akang%20Tari%20Onthel%20Heritage">WhatsApp 0857-2226-6916</a>
+  </div>
+  <div class="border-t border-white/10 mt-10 pt-6 text-[11px] text-[#8c867c]">© 2026 Akang Tari Onthel Heritage. Dibuat untuk melaju lebih pelan.</div>
+ </div>
+</footer>
+<a class="wa" target="_blank" rel="noopener" href="https://wa.me/6285722266916?text=Hallo%20Akang%20Tari%20Onthel%20Heritage" aria-label="Chat WhatsApp"><img src="foto/wa.png" alt="WhatsApp"></a>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+:root{--ink:#1a1a1a;--paper:#faf8f5;--red:#d94a43;--gold:#c9a45c;--mute:#7a736b}
+body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink)}
+.serif{font-family:'Playfair Display',serif}
+.accent{font-style:italic;color:var(--red)}
+.eyebrow{font-size:10px;letter-spacing:.22em;text-transform:uppercase;font-weight:700}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.nav a{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#d8d2c8;transition:.2s}
+.nav a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--red);color:#fff;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;padding:14px 22px;transition:.25s}
+.btn:hover{background:#b83a34;transform:translateY(-2px)}
+.chip{font-size:10px;letter-spacing:.16em;text-transform:uppercase;border:1px solid #ddd5c8;padding:9px 14px;color:var(--mute);transition:.2s}
+.chip.on,.chip:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.card{cursor:pointer}
+.card .art{aspect-ratio:3/2;overflow:hidden;position:relative}
+.card .art>div{height:100%;transition:transform .7s}
+.card:hover .art>div{transform:scale(1.07)}
+.tag{position:absolute;top:8px;left:8px;background:var(--red);color:#fff;font-size:8px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;padding:4px 8px;z-index:2}
+.dot{width:11px;height:11px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,.25)}
+.arr{width:28px;height:28px;border:1px solid #ccc;border-radius:50%;display:grid;place-items:center;font-size:12px;transition:.2s}
+.card:hover .arr{background:var(--ink);color:#fff}
+.stage{position:relative;overflow:hidden;aspect-ratio:3/2;cursor:grab;touch-action:none;background:#eee}
+.stage.drag{cursor:grabbing}
+#track{display:flex;height:100%;will-change:transform}
+.slide{flex:0 0 100%;height:100%;overflow:hidden}
+.pan{width:100%;height:100%;transform-origin:0 0;will-change:transform}
+.gbtn{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;background:#fffe;font-size:22px;line-height:1;z-index:3;box-shadow:0 2px 8px #0003;transition:.2s}
+.gbtn:hover{background:#fff;color:var(--red)}.gbtn.l{left:10px}.gbtn.r{right:10px}
+.gcnt{position:absolute;top:10px;right:10px;background:#000b;color:#fff;font-size:10px;letter-spacing:.1em;padding:5px 9px;z-index:3;pointer-events:none}
+.wm{position:absolute;left:50%;top:50%;width:min(520px,95vw);transform:translate(-50%,-50%);opacity:.25;pointer-events:none;user-select:none}
+.zbar{position:absolute;right:12px;bottom:12px;background:#fff;display:flex;align-items:center;font-size:11px;box-shadow:0 2px 8px #0003;z-index:3}
+.zbar button{width:32px;height:32px;font-size:16px}
+.zbar button:hover{background:#eee}
+.hint{position:absolute;left:12px;bottom:12px;background:#000b;color:#fff;font-size:10px;padding:7px 10px;z-index:3;pointer-events:none}
+.thumb{border:1px solid transparent;padding:2px;width:96px;cursor:pointer;opacity:.6;transition:.2s}
+.thumb.on{border-color:var(--ink);opacity:1}
+.thumb small{display:block;font-size:9px;color:var(--mute);margin-top:3px}
+.swatch{display:inline-flex;align-items:center;gap:6px;font-size:12px;cursor:pointer;padding:5px 9px;border:1px solid transparent}
+.swatch.on{border-color:var(--ink)}
+.spec{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid #e4ddd0;font-size:12px}
+.spec span:first-child{color:var(--mute)}
+.fade{animation:fade .6s ease both}
+@keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.wa{position:fixed;right:18px;bottom:18px;width:60px;height:60px;z-index:40;transition:transform .2s;filter:drop-shadow(0 6px 10px #0005)}
+.wa:hover{transform:scale(1.1)}
+.wa img{width:100%;height:100%}
+
+.news img{transition:transform .7s}.news:hover img{transform:scale(1.04)}.news:hover h2{color:var(--red)}
+.prose-news p{font-size:16px;line-height:1.95;color:#2b2723;margin-bottom:1.25rem}
+.prose-news blockquote{font-family:'Playfair Display',serif;font-style:italic;font-size:19px;line-height:1.7;border-left:3px solid var(--red);padding:2px 0 2px 20px;margin:1.8rem 0;color:#1a1a1a}
